@@ -51,7 +51,7 @@ This web application is designed to predict crop water stress levels using envir
 **Installation**
 ----------------
 
-1.  git clone https://github.com/yourusername/crop-water-stress-detection.git
+1.  git clone https://github.com/mahajanmuskaan/CropWaterStressDetection.git
     
 2.  cd crop-water-stress-detection
     
