@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 # Load the trained model and scaler
-model_path = "../backend/model/best_model.pkl"
+model_path = "https://github.com/mahajanmuskaan/CropWaterStressDetection/blob/f8b631d867c4f94b74c8777b147bf40637ea1375/backend/model/best_model.pkl"
 scaler_path = "../backend/model/scaler.pkl"
 
 # Check if model and scaler files exist
