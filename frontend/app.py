@@ -6,22 +6,25 @@ import os
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
-# Load the trained model and scaler
+
+# Define the paths to the model and scaler files
 model_path = "../backend/model/best_model.pkl"
 scaler_path = "../backend/model/scaler.pkl"
 
-# Check if model and scaler files exist
+# Check if the model file exists
 if os.path.exists(model_path):
-    print(f"Model file exists at: {os.path.abspath(model_path)}")
+    print(f"Model file found at: {os.path.abspath(model_path)}")
     model = joblib.load(model_path)  # Load the trained model
 else:
-    raise ValueError("Model file is missing. Please check the file path and ensure the model was saved correctly.")
+    raise ValueError(f"Model file is missing at {model_path}. Please check the file path and ensure the model was saved correctly.")
 
+# Check if the scaler file exists
 if os.path.exists(scaler_path):
-    print(f"Scaler file exists at: {os.path.abspath(scaler_path)}")
+    print(f"Scaler file found at: {os.path.abspath(scaler_path)}")
     scaler = joblib.load(scaler_path)  # Load the scaler
 else:
-    raise ValueError("Scaler file is missing. Please check the file path and ensure the scaler was saved correctly.")
+    raise ValueError(f"Scaler file is missing at {scaler_path}. Please check the file path and ensure the scaler was saved correctly.")
+
 
 # Example dataset (replace with actual dataset)
 data = {
