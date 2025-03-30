@@ -8,8 +8,8 @@ from sklearn.preprocessing import StandardScaler
 
 
 # Define the paths to the model and scaler files
-model_path = "../backend/model/best_model.pkl"
-scaler_path = "../backend/model/scaler.pkl"
+model_path = "backend/model/best_model.pkl"
+scaler_path = "backend/model/scaler.pkl"
 
 # Check if the model file exists
 if os.path.exists(model_path):
