@@ -71,7 +71,7 @@ This application helps you determine the water stress level of your crops based 
 """)
 
 # Display default image of irrigation on the landing page
-st.image("static/crop_background.jpg", caption="Irrigation System", use_container_width=True)
+st.image("frontend/static/crop_background.jpg", caption="Irrigation System", use_container_width=True)
 
 # Sidebar inputs for environmental data using sliders only
 st.sidebar.header("📥 Enter Environmental Data")
@@ -99,15 +99,15 @@ if st.sidebar.button("🌾 Predict Water Stress Level"):
     if prediction == 0:
         stress_level = "Low"
         recommendation = "Irrigation not needed."
-        crop_image = "static/low_stress.jpg"
+        crop_image = "frontend/static/low_stress.jpg"
     elif prediction == 1:
         stress_level = "Moderate"
         recommendation = "Consider irrigation within 24 hours."
-        crop_image = "static/moderate_stress.jpg"
+        crop_image = "frontend/static/moderate_stress.jpg"
     else:
         stress_level = "High"
         recommendation = "Urgent irrigation required to prevent crop damage."
-        crop_image = "static/high_stress.jpg"
+        crop_image = "frontend/static/high_stress.jpg"
 
     # Display Water Stress Level, Predicted Image, Recommendation, and Watering Tips in one section
     with st.container():
