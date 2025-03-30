@@ -7,8 +7,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 # Load the trained model and scaler
-model_path = "./model/best_model.pkl"
-scaler_path = "./model/scaler.pkl"
+model_path = "../backend/model/best_model.pkl"
+scaler_path = "../backend/model/scaler.pkl"
 
 # Check if model and scaler files exist
 if os.path.exists(model_path):
