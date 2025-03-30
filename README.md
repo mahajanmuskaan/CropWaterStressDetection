@@ -51,21 +51,21 @@ This web application is designed to predict crop water stress levels using envir
 **Installation**
 ----------------
 
-1.  bashCopyEditgit clone https://github.com/yourusername/crop-water-stress-detection.git
+1.  git clone https://github.com/yourusername/crop-water-stress-detection.git
     
-2.  bashCopyEditcd crop-water-stress-detection
+2.  cd crop-water-stress-detection
     
-3.  bashCopyEditpython -m venv venv
+3.  python -m venv venv
     
 4.  **Activate the virtual environment:**
     
-    *   bashCopyEditvenv\\Scripts\\activate
+    *   venv\\Scripts\\activate
         
-    *   bashCopyEditsource venv/bin/activate
+    *   source venv/bin/activate
         
-5.  bashCopyEditpip install -r requirements.txt
+5.  pip install -r requirements.txt
     
-6.  bashCopyEditstreamlit run app.pyThis will start the app and open it in your browser.
+6.  streamlit run app.pyThis will start the app and open it in your browser.
     
 
 **How to Use**
@@ -103,10 +103,6 @@ This web application is designed to predict crop water stress levels using envir
 
 The model used for predictions was trained on historical environmental data, including temperature, humidity, soil moisture, wind speed, rainfall, and NDVI. The dataset was preprocessed by handling missing values, scaling features, and using **SMOTE** (Synthetic Minority Over-sampling Technique) to balance the dataset. The models were then trained using techniques like Random Forest, XGBoost, Gradient Boosting, and others, and evaluated for the best performance.
 
-**App Demo**
-------------
-
-*   Once the app is running, go to http://localhost:8501/ in your web browser to interact with the web app and make predictions.
     
 
 **Contributing**
